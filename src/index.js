@@ -34,7 +34,7 @@ app.post('/task', async (req, res) => {
   }
 })
 
-app.patch('/task/:id'), async (req, res) => {
+app.patch('/task/:id', async (req, res) => {
   const {id} = req.params
   const data = req.body
   try {
@@ -43,7 +43,7 @@ app.patch('/task/:id'), async (req, res) => {
   } catch (error) {
     return res.status(400).send(error)
   }
-}
+})
 
 app.delete('/task/:id', async (req, res) => {
   const { id } = req.params
