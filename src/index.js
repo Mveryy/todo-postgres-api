@@ -24,6 +24,16 @@ app.get('/', async (req, res) => {
   }
 })
 
+app.get('/task/:id', async (req, res) => {
+  const { id } = req.params
+  try {
+    const { rows } = await pool.query('SELECT * FROM tasks WHERE id = ($1)', [id])
+    res.status(200).send(rows)
+  } catch (error) {
+    return res.status(400).send(error)
+  }
+})
+
 app.post('/task', async (req, res) => {
   const {description, done} = req.body
   try {
