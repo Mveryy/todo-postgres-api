@@ -6,6 +6,7 @@ exports.__esModule = true;
 var express_1 = __importDefault(require("express"));
 var cors_1 = __importDefault(require("cors"));
 var routes_1 = require("./routes/routes");
+require("dotenv/config");
 var PORT = process.env.PORT || 3333;
 var app = (0, express_1["default"])();
 app.use(express_1["default"].json());
