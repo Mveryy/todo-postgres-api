@@ -1,5 +1,7 @@
 # Todo App API
 
+## Link online : https://todo-app-backend1.herokuapp.com/task
+
 ## Como rodar o projeto localmente.
 
 ### 1 - Clonar o repositório
@@ -26,7 +28,7 @@ npx prisma studio
 
 # Rotas API
 
-O projeto irá rodar em http://localhost:3333/
+O projeto irá rodar em http://localhost:3333/task
 
 ## Get
 ### Todas as tasks : /task
