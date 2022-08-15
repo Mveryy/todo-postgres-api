@@ -17,6 +17,11 @@ npm install
 npm run dev
 ```
 
+### Rodar visualização do Banco de Dados pela interface do Prisma (https://localhost:5555)
+```
+npx prisma studio
+```
+
 <br>
 
 # Rotas API
